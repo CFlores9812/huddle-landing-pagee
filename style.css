@@ -1,0 +1,408 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: hsl(193, 100%, 96%);
+    
+
+}
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* ## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%) */
+
+
+
+
+
+img{
+    max-width: 100%;
+    
+}
+
+
+.btn, .community-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: #ffffff;
+}
+h2, p,h3{
+    margin: 0;
+}
+p{
+    color: hsl(192, 100%, 9%);
+    opacity: 70%;
+}
+
+h2{
+    font-size:1.8em;
+}
+
+h2, h3{
+    color:hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    
+}
+
+section{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+header{
+    
+    background-color:hsl(193, 100%, 96%);
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover; 
+    padding:3.5rem;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ffffff;
+    color:hsl(192, 100%, 9%);
+    width:175px;
+   /* margin: 0.65rem 0.65rem 1.5rem 0.65rem; */
+    font-size: 14px;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.nav-logo{
+width: 150px;
+    margin: 2rem;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+}
+
+.hero img{
+    width:50%;
+    
+}
+.hero-text{
+   
+    margin: 2rem 3rem 2rem 0;
+    padding: 1.5rem;
+    width:50%;
+ 
+}
+.btn{
+    margin: 1.2rem 0;
+    font-size: 14px;
+    width: 50%;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 32px;
+}
+
+
+.grow, .flow, .user{
+    margin:  1.5rem auto;
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3.5rem;
+    
+}
+
+.grow img
+,.flow img 
+,.user img{
+    width:40%;
+    height: auto;
+}
+
+.flow img {
+    margin-right: 40px;
+}
+
+.flow-text{
+    margin-left: auto;
+}
+.flow-text,.user-text,.grow-text{
+ width:50%;
+}
+
+.user-text{
+    margin-right: auto;
+}
+.community{
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: relative;
+    top: 75px;
+    width: 60%;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 15px;
+}
+
+.community-btn{
+    margin: 1.2rem 0;
+    font-size: 14px;
+    width: 50%;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 32px;
+}
+
+
+footer{
+    min-height: 420px;
+    color: #ffffff;
+    padding: 120px 80px 70px 100px;
+    background-color: hsl(192, 100%, 9%);
+    font-size: 16px;
+}
+footer ul li{
+    list-style-type: none;
+    margin-bottom: 0.8rem;
+}
+.footer-logo{
+    filter: brightness(0) invert(1);
+    width: 200px;
+    margin-bottom: 2rem;
+}
+.footer-body{
+   display: flex;
+   justify-content: space-around;
+}
+
+.col-1{
+    width: 40%;
+    /* height: auto; */
+    padding-right: 60px;
+}
+.col-1 i{
+    margin-right: 10px;
+}
+.col-2{
+    width:20%;
+    height:auto;
+}
+
+.col-3{
+    width:10%;
+}
+.col-4{
+display: flex;
+justify-content: space-around;
+
+margin-top:10px;
+width:20%;
+}
+.col-4 i {
+    font-size:15px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: #ffffff;
+    margin: 0 5px;
+    border-radius:  50%;
+    border: 1px solid #ffffff;
+}
+.rights{
+    color: #ffffff;
+  text-align: right;
+  margin: 1.5rem 0;
+  font-size: 14px;
+}
+@media screen and (max-width:760px){
+    footer{
+        padding: 120px 10% 10%;
+        
+      
+    }
+    footer img{
+        width:150px;
+    }
+    .footer-body{
+        flex-direction: column;
+        height: auto;
+    }
+    .col-1{
+      width:100%;
+      margin-right: auto;
+    }
+    .col-2{
+        width:100%;
+       
+    }
+    .col-3{
+width: 100%;
+    }
+
+    .col-4{
+width: 100%;
+margin-bottom: 20px;
+justify-content: center;
+    }
+
+    .rights{
+        text-align: center;
+        
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:780px){
+    header{
+        background-image: url("./images/bg-hero-mobile.svg");
+        background-position: center;
+        background-size: cover;
+    }
+   
+    header nav{
+       justify-content: space-between; 
+    }  
+
+    .nav-logo{
+        width:100px;
+        margin-right: 25px;
+        
+    }
+
+    nav a{
+       
+        width: 100px;
+        padding: 5px;
+    font-size: 12px;
+    margin-top:5px;
+    margin-left: 25px;
+    }
+  
+    .hero{
+        flex-direction: column;
+    }
+    .hero-text{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+       
+    }
+    .hero h2{
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .hero p{
+        font-size:.95em;
+        margin-bottom: 10px;
+    }
+    .btn{
+        width:90%;
+    }
+    .hero img {
+        width:90%;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    .flow,.user,.grow{
+       flex-direction: column; 
+       margin: 30px auto;
+    
+     
+    }
+    .flow img ,.user img ,.grow img{
+        width: 90%;
+        margin: 10px auto 30px auto;
+        
+    }
+    .flow-text,.user-text,.grow-text{
+        width:90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .flow-text h2 ,.user-text h2 ,.grow-text h2 {
+        font-size:1.5em;
+        margin: 20px auto 30px auto;
+    }
+
+    .flow-text p ,.user-text p,.grow-text p{
+        font-size:14px;
+        margin-top: 10px;
+    }
+
+    .user img ,.grow img{
+        order:1;
+        
+    }
+
+    .user-text,.grow-text{
+        order:2;
+    }
+}
+
+
+
+
+@media screen and (max-width:760px){
+    .community{
+        width:90%;
+    }
+    .community h2{
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    .community-btn{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
